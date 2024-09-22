@@ -5,58 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurdish Educational Development Center</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="main-nav">
             <div class="logo">KEDC</div>
-            <ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Kurdish Educational Development Center</h1>
-            <p>Empowering Kurdish students through comprehensive educational guidance and resources.</p>
+        <section id="home" class="hero">
+            <video autoplay muted loop id="bg-video">
+                <source src="path_to_your_video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h1>Kurdish Educational Development Center</h1>
+                <p>Empowering Kurdish students through innovative education</p>
+            </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="reveal">
             <h2>About Us</h2>
-            <p>The Kurdish Educational Development Center is a flexible organization dedicated to creating and managing educational projects that benefit Kurdish students. Our current focus is on providing comprehensive guidance for studying abroad, particularly in China.</p>
+            <p>The Kurdish Educational Development Center is dedicated to creating and managing educational projects that benefit Kurdish students, with a focus on international education opportunities.</p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h2>Our Projects</h2>
-            <div class="project-card">
-                <h3>Study in China Guide</h3>
-                <p>A 360-degree medium of instruction covering application processes, living conditions, and crucial information for Kurdish students pursuing education in China.</p>
-            </div>
-            <!-- Add more project cards as needed -->
-        </section>
-
-        <section id="team">
-            <h2>Our Team</h2>
-            <div class="team-members">
-                <!-- Add team member cards here -->
+            <div class="project-slider">
+                <div class="project-card">
+                    <img src="path_to_project_image1.jpg" alt="Project 1">
+                    <h3>Study in China Program</h3>
+                    <p>Comprehensive guidance for Kurdish students pursuing education in China.</p>
+                </div>
+                <!-- Add more project cards as needed -->
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Join Us</h2>
-            <p>We welcome new members and ideas to help drive our mission of advancing educational opportunities for the Kurdish student community.</p>
-            <a href="#" class="cta-button">Get Involved</a>
+        <section id="contact" class="reveal">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Kurdish Educational Development Center. All rights reserved.</p>
+        <p>&copy; 2023 Kurdish Educational Development Center</p>
     </footer>
 
     <script src="script.js"></script>
