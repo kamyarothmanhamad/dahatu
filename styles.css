@@ -1,0 +1,24 @@
+/* Default: LTR layout for English and Kurmanji */
+body {
+    direction: ltr;
+    text-align: left;
+}
+
+/* RTL layout for Sorani Kurdish */
+body.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Shared styles */
+.language-switcher {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.language-switcher a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
