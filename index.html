@@ -4,57 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurdish Educational Development Center</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="assets/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#join">Join Us</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">KEDC</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Empowering Kurdish Students</h1>
-            <p>Your journey to education starts here.</p>
-            <a href="#projects" class="cta-button">Learn More</a>
-        </div>
-    </section>
-
     <main>
-        <section id="about" class="container">
+        <section id="home">
+            <h1>Kurdish Educational Development Center</h1>
+            <p>Empowering Kurdish students through comprehensive educational guidance and resources.</p>
+        </section>
+
+        <section id="about">
             <h2>About Us</h2>
-            <p>We aim to provide educational resources and guidance for Kurdish students.</p>
+            <p>The Kurdish Educational Development Center is a flexible organization dedicated to creating and managing educational projects that benefit Kurdish students. Our current focus is on providing comprehensive guidance for studying abroad, particularly in China.</p>
         </section>
 
-        <section id="projects" class="container">
+        <section id="projects">
             <h2>Our Projects</h2>
-            <p>Explore the educational projects we are working on.</p>
+            <div class="project-card">
+                <h3>Study in China Guide</h3>
+                <p>A 360-degree medium of instruction covering application processes, living conditions, and crucial information for Kurdish students pursuing education in China.</p>
+            </div>
+            <!-- Add more project cards as needed -->
         </section>
 
-        <section id="resources" class="container">
-            <h2>Resources</h2>
-            <p>Download our guides and explore helpful content for students.</p>
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <!-- Add team member cards here -->
+            </div>
         </section>
 
-        <section id="join" class="container">
+        <section id="contact">
             <h2>Join Us</h2>
-            <p>Become a part of our mission to advance educational opportunities for Kurdish students.</p>
+            <p>We welcome new members and ideas to help drive our mission of advancing educational opportunities for the Kurdish student community.</p>
+            <a href="#" class="cta-button">Get Involved</a>
         </section>
     </main>
 
-    <footer class="container">
-        <p>Contact us at: <a href="mailto:info@kurdedu.org">info@kurdedu.org</a></p>
+    <footer>
+        <p>&copy; 2023 Kurdish Educational Development Center. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
